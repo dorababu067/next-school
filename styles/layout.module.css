@@ -1,0 +1,33 @@
+.grid__container {
+  width: 90vw;
+  min-height: 100vh;
+  display: grid;
+  grid-gap: 10px;
+  margin: 0 auto;
+  grid-template-areas:
+    "nav nav nav"
+    "sidebar main main"
+    "footer footer footer";
+  grid-template-columns: 300px 1fr 1fr;
+  grid-template-rows: 50px 1fr 30px;
+}
+
+.sidebar,
+.main {
+  padding: 5px;
+}
+.navbar {
+  grid-area: nav;
+}
+.sidebar {
+  grid-area: sidebar;
+  border: 3px solid ghostwhite;
+}
+.main {
+  grid-area: main;
+  border: 3px solid ghostwhite;
+}
+.footer {
+  grid-area: footer;
+  border: 3px solid ghostwhite;
+}

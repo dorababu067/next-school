@@ -8,9 +8,28 @@ body {
 
 a {
   color: inherit;
-  text-decoration: none;
+  text-decoration: none !important;
+  color: #212529 !important;
+}
+
+li > a:hover {
+  color: #0d6efd !important;
 }
 
 * {
   box-sizing: border-box;
+}
+
+.navbar-brand,
+.nav-link {
+  color: white !important;
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+  color: white !important;
+}
+
+.list-group-item.active > a {
+  color: white !important;
 }
